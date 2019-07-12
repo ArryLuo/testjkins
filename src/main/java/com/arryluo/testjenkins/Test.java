@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Test {
     @RequestMapping("jenkins")
     @ResponseBody
-    public Object test(){
-    return "测试Jenkins自动化部署";
-}
+    public Object test() {
+        return "测试Jenkins自动化部署";
+    }
+    @RequestMapping("jenkins1")
+    @ResponseBody
+    public Object test1() {
+        return "测试覆盖原来的镜像，进行部署";
+    }
 }
