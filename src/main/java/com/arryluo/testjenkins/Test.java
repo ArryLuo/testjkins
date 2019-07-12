@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class Test {
-@RequestMapping
+    @RequestMapping("jenkins")
     @ResponseBody
     public Object test(){
     return "测试Jenkins自动化部署";
